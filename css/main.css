@@ -290,7 +290,22 @@ textarea {
 
     nav {
         margin-bottom: 2% ;
+        background-color: #3b5998
     }
     footer a {
         margin-left: 5% ;
     }
+    .google {
+       margin-bottom: 2% ;
+    }
+    .carousel-indicators li{
+        background-color: grey;
+    }
+
+    .hide {
+        display: none ;
+    }
+    .card-group i {
+        margin-top : 2% ; 
+    }
+    

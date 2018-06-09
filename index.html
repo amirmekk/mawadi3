@@ -24,6 +24,7 @@
     };
     firebase.initializeApp(config);
   </script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -36,73 +37,77 @@
 
   <!-- Add your site or application content here -->
   
-  <div class='container'>
-    <nav class="navbar navbar-light "  style="background-color: #3b5998">
-        <a href='#' class='navbar-brand' >مواضيع</a>
+  <div class='container-fluid'>
+    <nav class="navbar">
+        <a href='#' class='navbar-brand text-white' ><i class="fas fa-graduation-cap"></i>  مواضيع</a>
     </nav>
     <div class='row'>
-        <div class='col-12 col-sm-6'>
-          <p>يسكاي فيلايت, س
-            كيواي نون نيومكيوام ايايوس موداي تيمبورا انكايديونت يوت لابوري أيت دولار ماجنا
-            ألايكيوام كيوايرات فوليوبتاتيم. يوت اينايم أد مينيما فينيام, كيواس نوستريوم أكسيركايتاشي
-            يلامكوربوريس سيوسكايبيت لابورايوسام, نايساي يوت ألايكيوايد أكس أيا كوموداي
-            كونسيكيواتشر؟ كيوايس أيوتيم فيل أيوم أيوري ريبريهينديرايت كيواي ان إيا فوليوبتاتي
-            فيلايت ايسسي كيوم نايهايل موليستايا كونسيكيواتيو,فيلايليوم كيواي دولوريم أيوم فيوجايات كيو
-            فوليوبتاس نيولا باراياتيور؟"
-            أت فيرو ايوس ايت أكيوساميوس ايت أيوستو أودايو دايجنايسسايموس ديوكايميوس كي
-            بلاندايتاييس برايسينتايوم فوليوبتاتيوم ديلينايتاي أتكيوي كورريوبتاي كيوأوس دولوريس أيت
-            سيما يليكيوسيونت ان كيولبا كيواي أوفايكيا ديسيريونت موللايتايا انايماي, أيدي ايست لابوريو
-            دايستا ينستايو. نام لايبيرو تيمبور, كيوم سوليوتا نوبايس ايست ايلاجينداي أوبتايو كيوموي
-            نايهايل ايمبيدايت كيو ماينيوس ايدي كيوود ماكسهيمي بلاسايت فاسيري بوسسايميوس,أومنايس
-            فوليوبتاس ايت ايوت أسسيو ميندايست, أومنيوس دولار ريبيللينديوس. تيمبورايبيوس أيوتي
-            كيواس موليستاياس أكسكيبتيوراي ساينت أوككايكاتاي كيبايدايتات نون بروفايدن
-            أيت دولوريوم فيوجا.ايت هاريوم كيوايديم ريريوم فاكايلايسايست ايت أكسبيدايتا
-            كيوايبيوسدام ايت أوت
-            أوففايكايس ديبايتايس أيوت ريريوم نيسيسسايتاتايبيوس سايبي ايفينايت يوت ايت فوليبتاتيس 
-            ريبيودايايانداي ساينت ايت موليسفاياي نون ري</p>
+        <div class='col-12 col-md-6 text-center'>
+          <div class='col-12'>
+              <p>مرحبا بكم في موقع <span id='logoName'>مواضيع</span>  </p>
+              <i class="fas fa-graduation-cap fa-7x"></i>
           </div>
-          <div class='col-12 col-sm-6'>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              </ol>
+          <div class="card-group">
+            <div class="card">
+              <i class="fas fa-file-alt fa-3x"></i>
+              <div class="card-body">
+                <h5 class="card-title text-right">تصفح الآف المواضيع من بكالوريات سابقة و بيضاء من مختلف أنحاء الوطن</h5>
+              </div>
+            </div>
+            <div class="card">
+              <i class="fas fa-clock fa-3x"></i>
+              <div class="card-body">
+                <h5 class="card-title">موقعنا سهل و منظم ما يمنحك مزيدا من الوقت للتركيز على دراستك</h5>
+              </div>
+            </div>
+            <div class="card">
+              <i class="fas fa-people-carry fa-3x"></i>
+              <div class="card-body">
+                <h5 class="card-title">يمكنك المشاركة في بناء وتطوير الموقع عن طريق ارسال المواضيع</h5>
+              </div>
+
+            </div>
+          </div>
+          </div>
+
+          <div class='col-12 col-md-6'>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active bg-red">
-                  <div class="card" >
+                <div class="carousel-item active bg-red" id='carousel-item1'>
+                  <div class="card " >
                     <div class="card-body">
-                      <h5 class="card-title">تسجيل كمستخدم جديد</h5>
-                      <button class='btn col-12' onclick='signIn(provider_google)' id='google'>تسجيل باستعمال غوغل</button>
-                      <button class='btn col-12' onclick='signIn(provider_facebook)' id='facebook'>تسجيل باستعمال فايسبوك</button>
+                      <h5 class="card-title float-right">تسجيل كمستخدم جديد</h5>
+                      <button class='btn col-12 google' onclick='signIn(provider_google)' id='googleSignIn'>تسجيل باستعمال غوغل <i class="fab fa-google"></i></button>
+                      <button class='btn col-12 google' onclick='signIn(provider_facebook)' id='facebookSignIn'>تسجيل باستعمال فايسبوك <i class="fab fa-facebook"></i></button>
                       <div class="form-group">
                         <label for="emailInput" class='float-right'>البريد الالكتروني</label>
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="ادخل البريد الالكتروني ">
+                        <input type="email" class="form-control" id="emailInpuSignInt" aria-describedby="emailHelp" placeholder="ادخل البريد الالكتروني ">
                       </div>
                       <div class="form-group">
                         <label for="passwordInput" class='float-right'>كلمة السر</label>
-                        <input class="form-control" id="passwordInput" placeholder="ادخل كلمة السر">
+                        <input class="form-control" id="passwordInputSignIn" placeholder="ادخل كلمة السر">
                       </div>
-                      <button class="btn btn-primary float-right" id='signInButton' onclick='emailSignIn(emailText,passwordText)'>تسجيل</button>
-                      <a href="#" class="card-link">لديك بالفعل حساب ؟</a>
+                      <button class="btn btn-primary float-right" id='signInButton' onclick='emailSignIn(emailTextSignIn,passwordTextSignIn)'><i class="fas fa-spinner fa-pulse spinner hide"></i>تسجيل</button>
+                      <a href="#" class="card-link" data-slide-to="1" data-target="#carousel">لديك بالفعل حساب ؟</a>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">تسجيل الدخول</h5>
-                      <button class='btn col-12' onclick='signIn(provider_google)' id='google'>تسجيل باستعمال غوغل</button>
-                      <button class='btn col-12' onclick='signIn(provider_facebook)' id='facebook'>تسجيل باستعمال فايسبوك</button>
+                      <h5 class="card-title float-right">تسجيل الدخول</h5>
+                      <button class='btn col-12 google' onclick='signIn(provider_google)' id='googleLogIn'>تسجيل باستعمال غوغل <i class="fab fa-google"></i></button>
+                      <button class='btn col-12 facebook' onclick='signIn(provider_facebook)' id='facebookLogIn'>تسجيل باستعمال فايسبوك <i class="fab fa-facebook"></i></button>
                       <div class="form-group">
                         <label for="emailInput" class='float-right'>البريد الالكتروني</label>
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="ادخل البريد الالكتروني ">
+                        <input type="email" class="form-control" id="emailInputLogIn" aria-describedby="emailHelp" placeholder="ادخل البريد الالكتروني ">
                       </div>
                       <div class="form-group">
                         <label for="passwordInput" class='float-right'>كلمة السر</label>
-                        <input class="form-control" id="passwordInput" placeholder="ادخل كلمة السر">
+                        <input class="form-control" id="passwordInputLogIn" placeholder="ادخل كلمة السر">
                       </div>
-                      <button class="btn btn-primary float-right" id='signInButton' onclick='emailSignIn(emailText,passwordText)'>تسجيل</button>
-                      <a href="#" class="card-link">سجل كمستخدم جديد</a>
+                      <button class="btn btn-primary float-right" id='signInButton' onclick='emailLogIn(emailTextLogIn,passwordTextLogIn)'><i class="fas fa-spinner fa-pulse spinner hide"></i>تسجيل</button>
+                      <a href="#" class="card-link" data-slide-to="0" data-target="#carousel">سجل كمستخدم جديد</a>
                     </div>
                   </div>
                 </div>
@@ -111,14 +116,12 @@
               
             </div>
     </div>
-    <footer class='row bg-red '>
-        <div class='col-12'>
+    <footer class='col-12 text-center'>
           <a href='#'>من نحن ؟</a>
           <a href='#'>فايسبوك</a>
           <a href='#'>تويتر</a>
           <a href='#'>الايميل</a>
           
-        </div>
       </footer>
       
   </div>

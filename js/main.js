@@ -1,29 +1,64 @@
-const googleSignInButton = document.getElementById('google') ,
-    facebookSignInButton = document.getElementById('facebook') ,
-    emailText = document.getElementById('emailInput').value,
-    passwordText = document.getElementById('passwordInput').value,
+const googleSignInButton = document.getElementsByClassName('google') ,
+    facebookSignInButton = document.getElementsByClassName('facebook') ,
+    emailTextSignIn = document.getElementById('emailInpuSignInt').value,
+    passwordTextSignIn = document.getElementById('passwordInputSignIn').value,
+    emailTextLogIn = document.getElementById('emailInputLogIn').value,
+    passwordTextLogIn = document.getElementById('passwordInputLogIn').value,
     signInButton = document.getElementById('signInButton') , 
-    provider_google = new firebase.auth.GoogleAuthProvider(), 
+    provider_google = new firebase.auth.GoogleAuthProvider(),
+    spinner = document.getElementsByClassName('fa-spinner') ,  
     provider_facebook = new firebase.auth.FacebookAuthProvider();
 
 signIn=(provider)=>{
-
-firebase.auth().signInWithPopup(provider).then(function(result){
-    console.log(result); 
-}).catch(function(err){
-    console.log(err) ; 
+    //spinner.removeClass('hide') ;
+    firebase.auth().signInWithPopup(provider)
+        .then(function(result){
+            //spinner.addClass('hide') ;
+            console.log(result); 
+        }).catch(function(err){
+            //spinner.addClass('hide') ;
+            console.log(err) ; 
 })};
 
 signOut=()=>{
-    firebase.auth().signOut().then(function() {})
+    firebase.auth().signOut()
+        .then(function() {
+            console.log('you just logged out !');
+    })
 }
 emailSignIn = (email , password) =>{
+    //spinner.removeClass('hide') ;
     firebase.auth().createUserWithEmailAndPassword(email , password)
-    .then(user => console.log(user))
-    .catch(e => console.log(e.message));  
+        .then(user => {
+            console.log(user);
+            //spinner.addClass('hide') ;
+        }
+        )
+        .catch(e => {
+            //console.log(e.message); 
+            spinner.addClass('hide') ;
+        });  
 }
-/*
-signInButton.addEventListener('click' , e=(emailText , passwordText)=>{
-   firebase.auth.createUserWithEmailAndPassword(emailText , passwordText).then(user => console.log(user))
-        .catch(e => console.log(e.message)); 
-}) ;*/
+
+emailLogIn=(email , password)=>{
+    //spinner.removeClass('hide') ;
+    firebase.auth().signInWithEmailAndPassword(email, password)
+        .then(user => {
+            //spinner.addClass('hide') ;
+            console.log(user) ;
+        })
+        .catch(err =>{
+            //spinner.addClass('hide') ;
+            console.log(err);
+        })
+}
+
+firebase.auth().onAuthStateChanged(firebaseUser => {
+    if(firebaseUser){
+        console.log('user logged in'); 
+        console.log(firebaseUser); 
+    }
+    else{
+        console.log('not logged in!')
+    }
+})
