@@ -1,3 +1,4 @@
+//auth using firebase
 const googleSignInButton = document.getElementsByClassName('google') ,
     facebookSignInButton = document.getElementsByClassName('facebook') ,
     emailTextSignIn = document.getElementById('emailInpuSignInt').value,
@@ -62,3 +63,5 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
         console.log('not logged in!')
     }
 })
+//retriveing data and displaying it 
+data = JSON.parse('data') ;

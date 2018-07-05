@@ -306,6 +306,13 @@ textarea {
         display: none ;
     }
     .card-group i {
-        margin-top : 2% ; 
+        margin-top : 2% ;
     }
-    
+    .dropdown {
+    float: right ;
+    margin : 1% ;
+    }
+  .choose {
+      float : right;
+      margin : 1% ;
+    }

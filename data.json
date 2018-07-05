@@ -1,0 +1,50 @@
+data = {
+    "scienceBranch" :{
+        "math" : {
+            "prevBacs" : [["title" , "urlOfSubject","urlOfSolution" , "thumbnail"] , []
+            ] ,
+            "bacBlancs" : [] ,
+            "exerciseSeries" : []
+        },
+        "physics" : {
+            "prevBacs" : [] ,
+            "bacBlancs" : [] ,
+            "exerciseSeries" : []
+        },
+        "science" : {
+            "prevBacs" : [] ,
+            "bacBlancs" : [] ,
+            "exerciseSeries" : []
+        } ,
+        "islamya" : {
+            "prevBacs" : [] ,
+            "bacBlancs" : [] ,
+            "exerciseSeries" : []
+        },
+        "hisGeo" : {
+            "prevBacs" : [] ,
+            "bacBlancs" : [] ,
+            "exerciseSeries" : []
+        },
+        "francais" : {
+            "prevBacs" : [] ,
+            "bacBlancs" : [] ,
+            "exerciseSeries" : []
+        },
+        "english" : {
+            "prevBacs" : [] ,
+            "bacBlancs" : [] ,
+            "exerciseSeries" : []
+        }
+    } ,
+    "scienceTeckniqueBranch": {
+
+    } ,
+    "mathBranch" : {
+
+    } ,
+    "lettreBranch" : {
+
+    }
+
+}
